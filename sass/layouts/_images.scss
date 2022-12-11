@@ -1,0 +1,50 @@
+.image{
+    padding-top: 94px;
+    padding-bottom: 94px;
+   
+    }
+
+.image__header{
+
+    @include font (null, null, 36px, 1.12, 0.03em, null);
+
+    text-align: center;
+    margin-bottom: 50px;  
+        }
+
+ .images__list{
+    display: flex;
+    gap: 30px;    
+                }
+
+
+.images__item{
+    position: relative;
+    display: flex;
+}
+
+
+.images__item{
+    width: (calc(100% - 60px)/3); 
+    margin: 0; 
+        }
+
+
+.image__title{
+
+   position: absolute;
+   height: 70px; 
+   width: 370px;
+   bottom: 0%;
+
+   display: flex;
+   justify-content: center;
+  
+   @include font (var(--primary-text-color), 700, 14px, 1.14, 0.03em, #FFFFFF);
+
+   align-items: center;
+   text-align: center;
+   text-transform: uppercase;
+   
+   background: rgba(47, 48, 58, 0.8);
+}
